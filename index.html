@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-<head><meta charset="UTF-8">
+<head>
+  <meta charset="UTF-8">
+  <title>回到頂端按鈕</title>
   <style>
     html, body { margin:0; padding:0; background:transparent; }
     #backToTop {
@@ -20,7 +22,7 @@
   <script>
     window.onscroll = () => {
       const btn = document.getElementById("backToTop");
-      btn.style.display = window.scrollY > 300 ? "block" : "none";
+      btn.style.display = window.scrollY > 200 ? "block" : "none";
     };
     document.getElementById("backToTop").onclick = () => {
       parent.scrollTo({ top: 0, behavior: "smooth" });
